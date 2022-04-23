@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Exo:wght@300&family=Rajdhani&display=swap');
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #182b3a;
+  background-image: linear-gradient(to bottom, #0d0a0b 0%,
+                                               #009fc2 74%);
+
+  min-height: 100vh; display: flex;
+  justify-content: center; align-items: center;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.card {
+  width: 500px;
+  overflow: hidden; background-color: #fff;
+  
+  box-shadow: 0 20px
+              30px 0
+              rgba(0, 0, 0, 0.1);
+}
+
+.card .card-header {
+  height: 150px;
+  position: relative;
+}
+
+.card .card-header .waves-container {
+  height: 100%;
+}
+
+.card .card-header .waves-container .wave {
+  width: 650px; height: 680px;
+  position: absolute;
+  background-image: linear-gradient(to bottom left, #FFD700, #FF8C00);
+  transform: translateX(-50%);
+}
+
+.card .card-header .waves-container .wave1 {
+  border-radius: 50%;
+  top: -332%; left: 50%;
+  animation: spin 12s linear infinite;
+}
+
+.card .card-header .waves-container .wave2 {
+  border-radius: 46%;
+  top: -321%; left: 48%;
+  opacity: 0.5;
+  animation: spin 16s linear infinite;
+}
+
+.card .card-header .waves-container .wave3 {
+  border-radius: 40%;
+  top: -310%; left: 52%;
+  opacity: 0.2;
+  animation: spin 16s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+.card .card-header .profile-img {
+  margin: 0 auto; left: 50%;
+  width: 20em; height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.card .card-body {
+  margin-top: 100px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.card .card-body h2 {
+  text-transform: capitalize;
+  color: rgb(82, 82, 82);
+}
+
+.card .card-body p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.8;
+  color: rgb(0.9, 1, 0);
+  margin: 20px 0;
+}
+
+.card .card-body .btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 45px;
+  color: #fff;
+  background-color: #5B86E5;
+  border-radius: 100px;
+  text-transform: uppercase;
+  margin: 20px 0 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.card .card-body .btn:hover {
+  box-shadow: 2px 2px
+              25px 10px
+              rgba(0,0,0,0.75);
+  
+  -webkit-box-shadow: 2px 2px
+                      25px 10px
+                      rgba(0,0,0,0.75);
+  
+  -moz-box-shadow: 2px 2px
+                   25px 10px
+                   rgba(0,0,0,0.75);
+}
